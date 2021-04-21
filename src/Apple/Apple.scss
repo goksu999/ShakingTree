@@ -1,0 +1,15 @@
+.apple-container {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+
+    &--falling {
+        animation: fall 3s;
+        animation-iteration-count: inherit;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fall {
+        0% { transform: translateY(10px) }
+        100% { transform: translateY(250px)  }
+      }
+}
